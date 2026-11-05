@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: devsecops-demo
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/YOUR_GITHUB_USERNAME/secure-devsecops-platform.git
+    targetRevision: main
+    path: k8s/overlays/lab
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: devsecops-demo
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+      - CreateNamespace=false
