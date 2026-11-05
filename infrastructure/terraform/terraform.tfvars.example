@@ -1,0 +1,8 @@
+kubeconfig_path = "~/.kube/config"
+
+# Replace with the actual context returned by kubectl.
+kube_context = "YOUR_K3S_CONTEXT"
+
+project_name = "secure-devsecops"
+
+environment = "lab"
