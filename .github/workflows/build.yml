@@ -53,4 +53,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            harbor.adnlocal.com/aidemo/devsecops-demo:${{ github.sha }}
+            harbor.adnovumlabs.com/aidemo/devsecops-demo:${{ github.sha }}
