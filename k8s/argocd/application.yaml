@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USERNAME/secure-devsecops-platform.git
+    repoURL: https://github.com/makwanji/secure-devsecops-platform.git
     targetRevision: main
     path: k8s/overlays/lab
 
